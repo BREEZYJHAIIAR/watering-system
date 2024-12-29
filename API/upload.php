@@ -24,8 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         file_put_contents($tempImagePath, $image);
 
  
-        $pythonScriptPath = "C:/Users/Zyd/Desktop/watering-system/scripts/process_image.py"; 
-        $command = escapeshellcmd("python3 $pythonScriptPath $tempImagePath");
+        $pythonScriptPath = "C:/xampp/htdocs/watering-system/scripts/process_image.py"; 
+        $command = escapeshellcmd("python $pythonScriptPath $tempImagePath");
         $output = shell_exec($command);
 
         if ($output === null) {

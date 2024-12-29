@@ -6,9 +6,9 @@
 #define CAMERA_MODEL_AI_THINKER
 #include "camera_pins.h"
 
-const char* ssid = "enter-wifi-name-here"; // MODIFY
-const char* password = "enter-wifi-password-here"; // MODIFY
-const char* serverName = "http://enter-ip-address-of-backend-here/api/upload"; // MODIFY
+const char* ssid = "Totskie"; // MODIFY
+const char* password = "12345678"; // MODIFY
+const char* serverName = "http://192.168.56.21/api/upload"; // MODIFY
 
 // LED Pins
 #define LED_BUILTIN 33  // Built-in white LED
@@ -282,6 +282,7 @@ void setup() {
 }
 
 void loop() {
+
     if(isTimeToCapture()) {
         Serial.println("It's time to capture! Taking picture...");
         camera_fb_t* fb = captureImage();
