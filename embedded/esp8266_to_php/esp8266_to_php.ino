@@ -4,9 +4,9 @@
 
 SoftwareSerial NodeMCU(D2,D3);
 
-const char* ssid = "enter-wifi-name-here"; // MODIFY
-const char* password = "enter-wifi-password-here"; // MODIFY
-const char* serverName = "http://enter-ip-address-of-backend-here/api/log_water"; // MODIFY
+const char* ssid = "Totskie"; // MODIFY
+const char* password = "12345678"; // MODIFY
+const char* serverName = "http://192.168.56.21/api/log_water"; // MODIFY
 
 const int moistureSensorPin = A0;
 const int DRY_THRESHOLD = 800;
